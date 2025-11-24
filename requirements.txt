@@ -1,0 +1,34 @@
+langchain==0.3.27
+langchain-community==0.3.27 #to use some of the integrations in langchain
+langchain-core==0.3.72 #to use some of the integrations in langchain
+langchain-openai
+langchain-groq==0.3.6 #An integration package connecting Groq and LangChain
+langchain-google-genai==2.1.8
+
+faiss-cpu==1.11.0.post1
+fastapi==0.116.1
+uvicorn==0.35.0    #to work on the fast api  (its a asgi server - asyncronised sever gateway interface)
+python-multipart==0.0.20 #to work on the fast api 
+python-dotenv==1.1.1  #to load all the environment variables from .env file to this code
+PyMuPDF==1.26.3
+structlog==25.4.0 #for logging purpose, #structure log in specific 
+#format like json format/yaml format, best recommended is json format
+docx2txt==0.9
+ipykernel==6.30.0 #normally not required, becz in production we dont run the .ipynb files
+streamlit==1.47.1
+pytest==8.4.1
+pypdf==5.8.0 #used to work with PDF files — such as reading, merging, splitting, 
+#extracting text or metadata, and encrypting PDFs
+cfn-lint
+-e .   #initially we have installed the setup.py file from the terminal
+#later on if we want to execute this project in some other environments, then 
+#we simply install using requirements.txt file, also whatever the packages we installed 
+#inside the virtual environment, so all those packages were also mentioned in the requirements.txt file
+#and -e . is for the local package
+
+#So any code changes you make locally are immediately reflected without reinstalling
+# This allows you to do:
+# pip install -e .
+
+# and then import your package anywhere:
+# import my_project

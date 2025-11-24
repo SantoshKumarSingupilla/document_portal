@@ -1,0 +1,23 @@
+faiss_db:
+  collection_name: "document_portal"
+
+
+embedding_model:
+  provider: "google"
+  model_name: "models/text-embedding-004"
+
+retriever:
+  top_k: 10
+
+llm:
+  groq:
+    provider: "groq"
+    model_name: "deepseek-r1-distill-llama-70b"
+    temperature: 0 #how much creative output we need from LLM's, if we increase the llm will be more creative and the range is between -1 to 1 where 0 is the straight forward output
+    max_output_tokens: 2048
+
+  google:
+    provider: "google"
+    model_name: "gemini-2.0-flash"
+    temperature: 0
+    max_output_tokens: 2048
