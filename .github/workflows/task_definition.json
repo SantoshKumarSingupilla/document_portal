@@ -29,7 +29,7 @@
       "secrets": [
         {
           "name": "API_KEYS",
-          "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:638351845708:secret:api_keys-PRLTA5"
+          "valueFrom": "arn:aws:secretsmanager:ap-south-2:638351845708:secret:api_keys-PRLTA5"
         }
         
       ],
@@ -37,7 +37,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/documentportaltd",
-          "awslogs-region": "ap-southeast-2",
+          "awslogs-region": "ap-south-2",
           "awslogs-stream-prefix": "ecs",
           "awslogs-create-group": "true"
         }
