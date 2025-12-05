@@ -10,8 +10,10 @@ from prompt.prompt_library import PROMPT_REGISTRY # type: ignore
 
 class DocumentAnalyzer:
     """
+    
     Analyzes documents using a pre-trained model.
     Automatically logs all actions and supports session-based organization.
+
     """
     def __init__(self):
         try:

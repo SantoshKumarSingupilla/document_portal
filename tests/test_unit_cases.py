@@ -6,7 +6,8 @@ from api.main import app   # or your FastAPI entrypoint
 
 client = TestClient(app)
 
+#verfication of the UI page
 def test_home():
     response = client.get("/")
-    assert response.status_code == 200
+    assert response.status_code == 200 #getting response from server to client
     assert "Document Portal" in response.text
