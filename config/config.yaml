@@ -12,7 +12,7 @@ retriever:
 llm:
   groq:
     provider: "groq"
-    model_name: "deepseek-r1-distill-llama-70b"
+    model_name: "openai/gpt-oss-120b" #"deepseek-r1-distill-llama-70b"
     temperature: 0 #how much creative output we need from LLM's, if we increase the llm will be more creative and the range is between -1 to 1 where 0 is the straight forward output
     max_output_tokens: 2048
 
