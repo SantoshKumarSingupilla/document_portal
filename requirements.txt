@@ -20,6 +20,7 @@ pytest==8.4.1
 pypdf==5.8.0 #used to work with PDF files — such as reading, merging, splitting, 
 #extracting text or metadata, and encrypting PDFs
 cfn-lint
+
 -e .   #initially we have installed the setup.py file from the terminal
 #later on if we want to execute this project in some other environments, then 
 #we simply install using requirements.txt file, also whatever the packages we installed 
